@@ -6,12 +6,12 @@
 
 ## 部署方式
 
-- **Workers** 部署：复制 [_worker.js](https://github.com/cmliu/CF-Workers-docker.io/blob/main/_worker.js) 代码，`保存并部署`即可
+- **Workers** 部署：复制 [_worker.js](https://github.com/tianunusual/CF-Workers-Docker/blob/main/_worker.js) 代码，`保存并部署`即可
 - **Pages** 部署：`Fork` 后 `连接GitHub` 一键部署即可
 
 ## 如何使用？ [视频教程](https://www.youtube.com/watch?v=l2jwq9CagNQ)
 
-例如您的Workers项目域名为：`docker.fxxk.dedyn.io`；
+例如您的Workers项目域名为：`docker.xk.ee`；
 
 ### 1.官方镜像路径前面加域名
 ```shell
@@ -27,7 +27,7 @@ docker pull docker.fxxk.dedyn.io/library/nginx:stable-alpine3.19-perl
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://docker.fxxk.dedyn.io"]  # 请替换为您自己的Worker自定义域名
+  "registry-mirrors": ["https://docker.xk.ee"]  # 请替换为您自己的Worker自定义域名
 }
 EOF
 sudo systemctl daemon-reload
